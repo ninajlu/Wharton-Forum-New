@@ -114,7 +114,10 @@ html, body, .outer-wrapper {
 /* line 4, ../sass/partials/_main.scss */
 body {
   background: #e0f1f7; }
-
+.photoo{
+  background-image: url('/wharton.forum.jpeg'); background-repeat:no-repeat;height: 190px; width: 74%;  position: relative;background-size:100%;margin-left: 13%; margin-right: 13%;
+  margin-top: 15px;
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
   /* line 9, ../sass/partials/_main.scss */
   body {
@@ -169,8 +172,10 @@ body {
 
 /* line 1, ../sass/partials/_typography.scss */
 body, textarea, input, button, input[type="submit"], input[type="button"] {
-  font-family: "Open Sans", "Proxima Nova Soft", "proxima-nova-soft", "PT SANS", "Helvetica Neue", Helvetica, sans-serif;
-  color: #4a4444;
+  /*font-family: "Open Sans", "Proxima Nova Soft", "proxima-nova-soft", "PT SANS", "Helvetica Neue", Helvetica, sans-serif;
+  */
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+color: #4a4444;
   line-height: 1.6; }
 
 /* line 9, ../sass/partials/_typography.scss */
@@ -669,10 +674,10 @@ body.pageslide-open {
 
 /* line 10, ../sass/modules/_header.scss */
 .header {
-  background: #4e555d url("/img/bg-header.png") top center;
+  background: linear-gradient( #2d496c, #162436);
   background-color: #4e555d;
   margin-bottom: 10px;
-  height: 70px;
+  height: 60px;
   position: relative;
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
@@ -708,7 +713,9 @@ body.pageslide-open {
     width: 100%;
     color: white;
     font-size: 30px;
-    z-index: 10; }
+    z-index: 10; 
+    visibility: hidden;
+  height:0;}
     /* line 35, ../sass/modules/_header.scss */
     .header .logo a, .header .logo a:visited {
       color: white; }
@@ -955,7 +962,7 @@ body.pageslide-open {
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
-        background: #4e555d url("/img/bg-header.png") top center; }
+        background: linear-gradient( #2d496c, #162436); }
         /* line 80, ../sass/modules/_posts.scss */
         .post-content .post-upvote .upvote-link.not-voted:hover i {
           color: white;
@@ -1056,17 +1063,16 @@ body.pageslide-open {
         color: #f36c3d; }
       /* line 175, ../sass/modules/_posts.scss */
       .post-actions li a.share-link {
-        color: #7ac0e4;
-        color: #f8e121; }
+        color: #8B0000;}
       /* line 179, ../sass/modules/_posts.scss */
       .post-actions li a.discuss-link {
-        color: #a3d06d; }
+        color: #2d496c; }
       /* line 182, ../sass/modules/_posts.scss */
       .post-actions li a.more-link {
         color: #7ac0e4; }
       /* line 185, ../sass/modules/_posts.scss */
       .post-actions li a:hover {
-        background: #4e555d url("/img/bg-header.png") top center;
+        background: linear-gradient( #2d496c, #162436);
         color: white; }
       /* line 189, ../sass/modules/_posts.scss */
       .post-actions li a.voted {
@@ -1172,7 +1178,7 @@ body.pageslide-open {
   background: #fffce0; }
 /* line 288, ../sass/modules/_posts.scss */
 .post.sticky .post-actions li a:hover {
-  background: #4e555d url("/img/bg-header.png") top center; }
+  background: linear-gradient( #2d496c, #162436); }
 
 /* line 292, ../sass/modules/_posts.scss */
 .more-button {
@@ -1183,7 +1189,7 @@ body.pageslide-open {
     width: 100%;
     display: block;
     height: 70px;
-    background: rgba(0, 0, 0, 0.075);
+    background: rgba(0, 0, 0, .475);
     text-align: center;
     color: white;
     line-height: 70px;
@@ -1877,7 +1883,7 @@ table {
     position: relative;
     display: block;
     margin-top: 10px;
-    background: #f36c3d;
+    background: #8B0000;
     color: white;
     height: 30px;
     width: 40px; }
@@ -1889,7 +1895,11 @@ table {
       line-height: 30px;
       height: 30px;
       font-size: 18px; }
-
+.photoo{
+  visibility: hidden;
+  height:0;
+  margin-top:0px;
+}
   /* line 67, ../sass/partials/_mobile.scss */
   .mobile {
     display: block !important; }
@@ -1929,7 +1939,9 @@ table {
       left: 0px;
       font-size: 22px;
       line-height: 50px;
-      z-index: 10; }
+      z-index: 10;
+      visibility: visible;
+  height:50px; }
       /* line 98, ../sass/partials/_mobile.scss */
       .header .logo a img {
         height: auto !important;
@@ -1988,7 +2000,7 @@ table {
         background: white; }
         /* line 155, ../sass/partials/_mobile.scss */
         .header .mobile-button:hover i {
-          color: #f36c3d; }
+          color: #8B0000; }
 
   /* line 162, ../sass/partials/_mobile.scss */
   .post .post-content {

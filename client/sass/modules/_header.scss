@@ -3,12 +3,12 @@
 // }
 // @media only screen and (-webkit-min-device-pixel-ratio: 1.5){
 // 	.header{
-// 		background:url("../images/bg-black@2x.png") top center;
+// 		background:linear-gradient( #2d496c, #162436);
 // 		background-size:10px 10px;
 // 	}
 // }
 .header{
-	background:$highlight-color url("/img/bg-header.png") top center;
+	background:  linear-gradient( #2d496c, #162436);
 	background-color:$highlight-color;
 	margin-bottom:$grid-margin;
 	height:$grid-unit;

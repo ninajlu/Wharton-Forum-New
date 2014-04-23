@@ -1,5 +1,6 @@
 <template name="nav">
-    <div style="background-image: url('/wharton.forum.jpeg'); background-repeat:no-repeat;height: 100%; width: 100%;  background-size:100%;">
+    <div class="photoo grid"><a href="/"><img src="/whartonforum.jpeg" height="100%" style="display: block;
+margin: auto"></a>
   </div>
   <header class="header grid">
     <a id="mobile-menu" href="#menu" class="mobile mobile-button menu"><i class="icon-menu"></i><span>{{i18n "Menu"}}</span></a>
@@ -57,7 +58,7 @@
         </a>
       </h1>
     {{else}}
-      <h1 class="logo"><a href="/">{{site_title}}</a></h1>
+      <h1 class="logo"><a href="/">Wharton Forum</a></h1>
     {{/if}}
 
     {{#if canView}}
